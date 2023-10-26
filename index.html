@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Creation Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <span class="header-title">TEJA PHANIDHAR</span>
+            <button id="addNewCardBtn" onclick="toggleForm()">Add Data</button>
+        </div>
+        <div id="cards"></div>
+    </header>
+    <div id="jobs-container"></div>
+
+    
+<div class="job-form" id="jobForm">
+    <h2>Create a job</h2>
+
+    <form id="jobCreationForm">
+        <label>
+            Job title*
+            <input type="text" name="job_title" placeholder="ex. UX UI Designer" required>
+        </label>
+        
+        <label>
+            Company name*
+            <input type="text" name="company_name" placeholder="ex. Google" required>
+        </label>
+
+        <label>
+            Industry*
+            <input type="text" name="industry" placeholder="ex. Information Technology" required>
+        </label>
+
+        <div class="split-input">
+            <label>
+                Location
+                <input type="text" name="location" placeholder="ex. Chennai">
+            </label>
+
+            <label>
+                Remote type
+                <input type="text" name="remote_type" placeholder="ex. In-office">
+            </label>
+        </div>
+        
+
+        <div class="split-input">
+            <label>
+                Experience - Minimum
+                <input type="number" name="exp_min" value="" required min="0">
+            </label>
+            <label>
+                Experience - Maximum
+                <input type="number" name="exp_max" value="" required min="0">
+            </label>
+        </div>
+        
+        <div class="split-input">
+            <label>
+                Salary - Minimum
+                <input type="number" name="sal_min" value="" required min="0">
+            </label>
+            <label>
+                Salary - Maximum
+                <input type="number" name="sal_max" value="" required min="0">
+            </label>
+        </div>
+
+        <label>
+            Total employee
+            <input type="number" name="total_emp" value="" required min="1">
+        </label>
+
+        <div class="apply-type">
+            <label>
+                <input type="radio" name="applyType" value="quick" required> Quick apply
+            </label>
+            <label>
+                <input type="radio" name="applyType" value="external" required> External apply
+            </label>
+        </div>
+
+        <button  id="button2"     type="submit">Save</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
