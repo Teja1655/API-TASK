@@ -212,7 +212,10 @@ button:hover {
 #jobs-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    background-color: #e6e6e6;
 }
+
+
 
 
 
