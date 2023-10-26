@@ -211,8 +211,10 @@ button:hover {
 
 #jobs-container{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     background-color: #e6e6e6;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 

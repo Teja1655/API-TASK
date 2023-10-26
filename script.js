@@ -35,7 +35,7 @@ document.getElementById('jobCreationForm').addEventListener('submit', function(e
     });
     let json = JSON.stringify(object);
 
-    fetch('https://6530d94e6c756603295f269f.mockapi.io/jobs', {
+    fetch('https://6530d94e6c756603295f69f.mockapi.io/jobs', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
